@@ -1,0 +1,324 @@
+.HomePage{
+    padding-inline: 6vw;
+    padding-bottom: 2vw;
+
+    .HeroSectionSwiper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .heroSection{
+            margin-inline: auto;
+            width: 90vw;
+            height: auto;
+            border-radius: 2vw;
+        }
+        >h1{
+            position: absolute;
+            top: 6vw;
+            left: 6vw;
+            color: var(--white);
+            @include Shadow;
+            font-weight: bold;
+            width: 60%;
+            text-transform: capitalize;
+            text-wrap: balance;
+            font-size: 5vw;
+            line-height: 5.5vw;
+            content: '';
+        }
+    }
+    .Fillter{
+        display: flex;
+        justify-content: space-between;
+        padding: 1vw;
+        width: 100%;
+        >h1{
+            font-size: 2vw;
+            color: var(--primary);
+        }
+    }
+    .Categories{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1vw;
+        .Categories_Item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1vw;
+            border-radius: 1vw;
+            color: var(--text);
+            font-size: 1vw;
+            // transition: .1s ease-in-out;
+            @include Shadow;
+            cursor: pointer;
+            &:hover{
+                scale: 1.05;
+
+            }
+
+            
+
+        }
+        .Categories_Item.active{
+            background: var(--primary);
+            color: var(--white);
+        }
+
+    }
+    .CategorySection{
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+        padding: 1vw;
+        width: 100%;
+        >h1{
+            font-size: 2vw;
+            color: var(--primary);
+        }
+    }
+    
+
+    
+}
+.ProductCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1vw;
+    margin-block: 1vw;
+  
+}
+
+.ProductCard{
+    width: 20vw;
+    border-radius: 2vw;
+    background: var(--bg);
+    @include Shadow;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    img{
+    width: 100%;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+
+    }
+
+    .ProductCardInfo{
+        display: flex;
+        flex-direction: column;
+        gap: .5vw;
+        max-width: 70%;
+        padding: 1vw;
+        h5{
+            font-size: 1.3vw;
+            color: var(--primary);
+            white-space: nowrap;
+        }
+       
+        h6,p{
+            color: var(--text);
+            font-size: .8vw;
+        }
+        h6{
+            color: var(--text);
+        }
+    }
+    .viewIcon{
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        cursor: pointer;
+        svg{
+            font-size: 1.5vw;
+            color:transparent;
+
+
+        }
+
+    }
+&:hover{
+    scale: 1.05;
+    .viewIcon{
+
+        svg{
+            color: var(--subtext);
+
+
+        }
+
+    }
+}
+}  
+
+@media screen and (max-width:800px) {
+    .HomePage{
+        padding-inline: 30px;
+        padding-bottom: 20px;
+    
+        .HeroSectionSwiper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .heroSection{
+                margin-inline: auto;
+                width: 90vw;
+                height: auto;
+                border-radius: 2vw;
+                // height: 300px;
+            }
+            >h1{
+                position: absolute;
+                top: 6vw;
+                left: 6vw;
+                color: var(--white);
+                font-weight: bold;
+                width: 77%;
+                text-transform: capitalize;
+                text-wrap: balance;
+                font-size: 8vw;
+                line-height:11vw;
+                content: '';
+            }
+        }
+        .Fillter{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            width: 100%;
+            >h1{
+                font-size: 20px;
+                color: var(--primary);
+            }
+        }
+        .CategorySection{
+            display: flex;
+            flex-direction: column;
+            gap: 2vw;
+            padding: 10px 20px;
+            width: 100%;
+            >h1{
+                font-size: 20px;
+                color: var(--primary);
+            }
+        }
+        
+        .Categories{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+
+            .Categories_Item{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 6px;
+                border-radius: 6px;
+                color: var(--text);
+                font-size: 8px;
+                // transition: .1s ease-in-out;
+                @include Shadow;
+                cursor: pointer;
+                &:hover{
+                    scale: 1.05;
+    
+                }
+    
+                
+    
+            }
+            .Categories_Item.active{
+                background: var(--primary);
+                color: var(--white);
+            }
+    
+        }
+        
+    
+        
+    }
+    .ProductCards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-block: 10x;
+      
+    }
+    
+    .ProductCard{
+        width: 200px;
+        border-radius: 20px;
+        background: var(--bg);
+        @include Shadow;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: relative;
+        img{
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    
+        }
+    
+        .ProductCardInfo{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            max-width: 70%;
+            padding: 14px;
+            h5{
+                font-size: 13px;
+                color: var(--primary);
+                white-space: nowrap;
+            }
+           
+            h6,p{
+                color: var(--text);
+                font-size:10px;
+            }
+            h6{
+                color: var(--text);
+            }
+        }
+        .viewIcon{
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            cursor: pointer;
+            svg{
+                font-size: 15px;
+                color:transparent;
+    
+    
+            }
+    
+        }
+    &:hover{
+        scale: 1.05;
+        .viewIcon{
+    
+            svg{
+                color: var(--text);
+    
+    
+            }
+    
+        }
+    }
+    }  
+
+}

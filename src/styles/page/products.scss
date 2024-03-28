@@ -1,0 +1,10 @@
+.products{
+    display: flex;
+    flex-direction: column;
+    padding: 0vw 16vw;
+    gap: 3vw;
+    >h1{
+        font-size: 3vw;
+        text-align: center;
+    }
+}

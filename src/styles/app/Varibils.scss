@@ -1,0 +1,27 @@
+:root {
+    --primary: #1aa8ff;     
+    --secondary: #ffd12e;   
+    --text: black;     
+    --white:white;   
+    --bg: #ffffff;
+    --bg2:  #f8f8f8;        
+    --shadow: rgba(255, 255, 255, 0.15); 
+    --subtext: #b6bec9;  
+
+}
+@mixin underLineText($color1,$color2){
+    background-image: linear-gradient(90deg, $color1 , $color2);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 500ms ease-in-out;
+    &:hover{
+        background-size: 100% 3px;
+  
+    }
+  }
+
+@mixin Shadow {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+  
+  }

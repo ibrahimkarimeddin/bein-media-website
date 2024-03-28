@@ -1,0 +1,64 @@
+.NavBar{
+    height: 4vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:  2vw 6vw;
+        
+        >img{
+            width: 10vw;
+            cursor: pointer;
+        }
+        ul,li{
+            all: unset;
+
+        }
+        ul{
+            display: flex;
+            gap: 1vw;
+            li{
+                a{
+                    font-size: 1.5vw;
+                    padding-bottom: .4vw;
+                    @include underLineText(var(--primary),var(--primary));
+
+                }
+            }            
+        }
+
+    
+
+    
+}
+@media screen and (max-width: 800px) {
+    .NavBar{
+        height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            
+            >img{
+                width: 90px;
+                cursor: pointer;
+            }
+
+            ul{
+                display: flex;
+                gap: 10px;
+                li{
+                    a{
+                        font-size: 12px;
+                        padding-bottom: 7px;
+                        @include underLineText(var(--primary),var(--primary));
+    
+                    }
+                }            
+            }
+    
+        
+    
+        
+    }
+
+    }
