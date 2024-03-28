@@ -4,7 +4,7 @@ import ProductCards from '@/components/home/ProductCards'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
-const page = () => {
+const Page = () => {
 
   // update type later 
   const [data , setData] = useState<any>(null)
@@ -26,4 +26,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -10,7 +10,7 @@ import { getDataHome } from '@/api/home'
 import axios from 'axios'
 import { BaseURL } from '@/api/config'
 import { VscLoading } from 'react-icons/vsc'
-const page =  () => {
+const Page =  () => {
   
   // change type data later 
   const [data ,  setData] =  useState<any>(null)
@@ -33,5 +33,5 @@ const page =  () => {
   )
 }
 
-export default page
+export default Page
 
