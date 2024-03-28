@@ -10,19 +10,14 @@ import { getDataHome } from '@/api/home'
 import axios from 'axios'
 import { BaseURL } from '@/api/config'
 import { VscLoading } from 'react-icons/vsc'
-const page =  () => {
+const page =  async () => {
   
-  // change type data later 
-  const [data ,  setData] =  useState<any>(null)
+
+  const {data}  = await (await fetch(BaseURL)).json()
   
-  useEffect(()=>{
+  
 
-    axios.get(BaseURL).then((res)=>setData(res?.data?.data))
-  },[])
 
-  if(!data){
-    return <div className='loading'>Loading ... </div>
-  }
   return (
     <div className='HomePage'>
       <HeroSectionSwiper/> 
