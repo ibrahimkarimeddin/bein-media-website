@@ -10,7 +10,7 @@ import { getDataHome } from '@/api/home'
 import axios from 'axios'
 import { BaseURL } from '@/api/config'
 import { VscLoading } from 'react-icons/vsc'
-const page =  async () => {
+const Page =  async () => {
   
 
   const {data}  = await (await fetch(BaseURL)).json()
@@ -28,5 +28,5 @@ const page =  async () => {
   )
 }
 
-export default page
+export default Page
 

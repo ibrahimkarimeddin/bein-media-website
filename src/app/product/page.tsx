@@ -2,7 +2,7 @@ import { BaseURL } from '@/api/config'
 import ProductCards from '@/components/home/ProductCards'
 import React, { useEffect, useState } from 'react'
 
-const page = async () => {
+const Page = async () => {
 
   // update type later 
   const  {data} =await (await fetch(BaseURL+"/item")).json(); 
@@ -18,4 +18,4 @@ const page = async () => {
   )
 }
 
-export default page
+export default Page
